@@ -1,0 +1,46 @@
+@startuml
+skinparam linestyle ortho
+rectangle "jack:Player" as p1
+rectangle "fred:Player" as p2
+rectangle ":Player" as p3
+rectangle ":Player" as p4
+
+rectangle ":Table" as table
+rectangle ":Hand" as h1
+rectangle ":Hand" as h2
+rectangle ":Hand" as h3
+rectangle ":Hand" as h4
+
+rectangle "3jaune:Card" as c1
+rectangle "5bleu:Card" as c2
+rectangle ":Card" as c3
+rectangle ":Card" as c4
+rectangle ":Card" as c5
+
+rectangle ":Deck" as deck
+
+p1 -> h1
+p2 -> h2
+p3 --> h3
+p4 --> h4
+
+table -right-> p1
+table -left-> p2
+table --> p3
+table --> p4
+table --> "lastPlayed" p2
+
+table <- p1
+table <- p2
+table <- p3
+table <- p4
+
+deck <- table
+deck -up-> c1 : played
+deck -up-> c2 : played
+deck --> c3 : draw
+deck --> c4 : draw
+deck --> c5 : draw
+
+
+@enduml
