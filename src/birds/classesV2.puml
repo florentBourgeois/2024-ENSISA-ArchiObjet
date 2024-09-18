@@ -1,0 +1,49 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+
+abstract class Oiseau {
+    nom : String
+}
+
+interface Vole {
+    vole()
+}
+
+interface Chante {
+    chante()
+}
+
+
+class Pigeon {
+    vole()
+    chante()
+}
+
+
+
+
+
+class Autruche {
+    vole()
+}
+
+class CanardPlastique {
+    vole()
+}
+Oiseau <|-- Pigeon
+Oiseau <|-- Autruche
+Oiseau <|-- CanardPlastique
+
+Chante <|.. Pigeon
+Chante <|.. Autruche
+Vole <|.. CanardPlastique
+
+
+note left of Pigeon::vole
+    System.out.println("Je vole avec mes ailes")
+end note
+
+
+
+@enduml

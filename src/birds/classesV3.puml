@@ -1,0 +1,43 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+
+abstract class Oiseau {
+    nom : String
+    vole()
+}
+
+interface Volant {
+    faireVole()
+}
+
+Volant <|.. VolePas
+Volant <|.. VoleAvecAiles
+
+Oiseau -> "v" Volant
+class Pigeon {
+}
+
+
+
+
+
+class Autruche {
+    vole()
+}
+
+class CanardPlastique {
+    vole()
+}
+Oiseau <|-- Pigeon
+Oiseau <|-- Autruche
+Oiseau <|-- CanardPlastique
+
+
+
+note left of Oiseau::vole
+    this.v.faireVole()
+end note
+
+
+@enduml
