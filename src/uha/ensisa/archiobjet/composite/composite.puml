@@ -1,0 +1,41 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+interface Itf {
+}
+
+Itf <|-- A
+
+Itf <|-- Composite
+Itf "*" <-- Composite
+
+class Lampe {
+    allumer()
+    eteindre()
+    isOn() : bool
+}
+
+class Interrupteur {
+    commute()
+}
+
+class Circuit {
+    allumer()
+    eteindre()
+    isOn() : bool
+    add(Truc);
+}
+
+interface Allumable {
+     allumer()
+     eteindre()
+     isOn() : bool
+}
+
+Allumable <|.. Lampe
+Allumable <|.. Circuit
+Allumable "*" <-- Circuit
+
+Interrupteur -> Allumable
+
+@enduml
