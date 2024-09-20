@@ -1,0 +1,47 @@
+@startuml
+skinparam linestyle ortho
+rectangle ":Interrupteur" as i1
+rectangle ":Interrupteur" as i2
+rectangle ":Interrupteur" as i3
+
+rectangle ":Lampe" as l1
+
+rectangle ":Lampe" as l2
+rectangle ":Lampe" as l3
+rectangle ":Lampe" as l4
+
+rectangle ":Lampe" as l5
+rectangle ":Lampe" as l6
+rectangle ":Lampe" as l7
+rectangle ":Lampe" as l8
+rectangle ":Lampe" as l9
+rectangle ":Lampe" as l10
+
+rectangle ":Circuit" as c1
+
+rectangle ":Circuit" as c2
+rectangle ":Circuit" as c3
+rectangle ":Circuit" as c4
+
+ i1 -> l1
+
+i2 -> c1
+c1 --> l2
+c1 --> l3
+c1 --> l4
+
+
+c3 --> l5
+c3 --> l6
+c3 --> l7
+
+c4 --> l8
+c4 --> l9
+
+c2 --> c3
+c2 --> c4
+c2 --> l10
+
+i3 -> c2
+
+@enduml
