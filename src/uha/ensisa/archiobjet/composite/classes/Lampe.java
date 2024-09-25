@@ -1,5 +1,7 @@
 package uha.ensisa.archiobjet.composite.classes;
 
+import uha.ensisa.archiobjet.visitor.VisitorITF;
+
 public class Lampe implements Allumable{
 
     private String color = "blanc";
@@ -34,5 +36,10 @@ public class Lampe implements Allumable{
     @Override
     public boolean isOn() {
         return isOn;
+    }
+
+    @Override
+    public void accept(VisitorITF v) {
+        v.visitLampe(this);
     }
 }

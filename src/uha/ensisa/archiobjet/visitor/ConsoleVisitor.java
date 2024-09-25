@@ -13,7 +13,7 @@ public class ConsoleVisitor implements VisitorITF{
 
         System.out.println("le circuit a " + c.getAllumables().size() + "elements");
         for (Allumable a : c.getAllumables())
-            System.out.println(a.getClass().getName());
+            a.accept(this);
         System.out.println("\n---\n");
         return "";
     }
@@ -25,6 +25,8 @@ public class ConsoleVisitor implements VisitorITF{
             System.out.println("la lampe est allumée");
         else
             System.out.println("la lampe est éteinte");
+
+        System.out.println("\n---\n");
         return "";
     }
 }

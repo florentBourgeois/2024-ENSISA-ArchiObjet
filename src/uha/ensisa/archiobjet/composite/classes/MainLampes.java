@@ -41,5 +41,8 @@ public class MainLampes {
 
         c2.accept(v);
 
+        //c1.ajouter(c2); // attention récursion
+        //c2.accept(v);
+
     }
 }
