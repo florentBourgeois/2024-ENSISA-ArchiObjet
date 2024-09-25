@@ -30,6 +30,7 @@ interface Allumable {
      allumer()
      eteindre()
      isOn() : bool
+     accept(VisiteurInterface)
 }
 
 Allumable <|.. Lampe
@@ -37,5 +38,22 @@ Allumable <|.. Circuit
 Allumable "*" <-- Circuit
 
 Interrupteur -> Allumable
+
+Client --> Allumable
+
+Client -> VisiteurInterface
+
+interface VisiteurInterface {
+    visiteLampe(Lampe)
+    visiteCircuit(Circuit)
+
+    visite(Circuit)
+    visite(Lampe)
+
+}
+
+VisiteurInterface <|.. VisiteurConsole
+
+
 
 @enduml

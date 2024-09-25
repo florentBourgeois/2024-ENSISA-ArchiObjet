@@ -6,6 +6,14 @@ public class Lampe implements Allumable{
     private int prix = 10;
     private boolean isOn = false;
 
+
+    public Lampe() {
+    }
+
+    public Lampe(boolean isOn) {
+        this.isOn = isOn;
+    }
+
     public Lampe(String color, int prix) {
         this.color = color;
         this.prix = prix;
