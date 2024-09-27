@@ -1,6 +1,4 @@
-package Operations;
-
-import Operations.Visitors.VisiteurRecursifConsole;
+package uha.ensisa.archiobjet.calculatrice;
 
 public class Add extends Operation {
     private Valuable a, b;
@@ -12,13 +10,8 @@ public class Add extends Operation {
     }
 
     @Override
-    public double getValue() {
-        return a.getValue() + b.getValue();
-    }
-
-    @Override
-    public void accept(VisiteurRecursifConsole visitor) {
-        visitor.visitAdd(this);
+    public int resultat() {
+        return a.resultat() + b.resultat();
     }
 
     @Override

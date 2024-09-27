@@ -1,4 +1,4 @@
-package Operations;
+package uha.ensisa.archiobjet.calculatrice;
 
 public abstract class Operation implements Valuable {
     protected Valuable a, b;

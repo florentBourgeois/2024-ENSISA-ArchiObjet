@@ -1,6 +1,5 @@
-package Operations;
+package uha.ensisa.archiobjet.calculatrice;
 
-import Operations.Visitors.VisiteurRecursifConsole;
 
 public class Div extends Operation {
     private Valuable a, b;
@@ -12,13 +11,8 @@ public class Div extends Operation {
     }
 
     @Override
-    public double getValue() {
-        return a.getValue() / b.getValue();
-    }
-
-    @Override
-    public void accept(VisiteurRecursifConsole visitor) {
-
+    public int resultat() {
+        return a.resultat() / b.resultat();
     }
 
     @Override

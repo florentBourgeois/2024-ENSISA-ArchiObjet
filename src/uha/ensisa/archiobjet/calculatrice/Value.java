@@ -1,22 +1,16 @@
-package Operations;
+package uha.ensisa.archiobjet.calculatrice;
 
-import Operations.Visitors.VisiteurRecursifConsole;
 
 public class Value implements Valuable {
-    private double value;
+    private int value;
 
-    public Value(double value) {
+    public Value(int value) {
         this.value = value;
     }
 
     @Override
-    public double getValue() {
+    public int resultat() {
         return value;
-    }
-
-    @Override
-    public void accept(VisiteurRecursifConsole visitor) {
-        visitor.visitValue(this);
     }
 
     @Override

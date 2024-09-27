@@ -1,8 +1,6 @@
-package Operations;
+package uha.ensisa.archiobjet.calculatrice;
 
-import Operations.Visitors.VisiteurRecursifConsole;
 
 public interface Valuable {
-    double getValue();
-    void accept(VisiteurRecursifConsole visitor);
+    int resultat();
 }
