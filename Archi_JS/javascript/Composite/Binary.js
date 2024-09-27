@@ -7,7 +7,6 @@ export default class Binary extends Valuable {
         this.opB = opB;
     }
 
-
     getOpA() {
         return this.opA;
     }
