@@ -1,0 +1,30 @@
+@startuml
+
+abstract class X {
+    doSomething()
+}
+
+class A {
+    doSomething()
+}
+
+class B {
+    doSomething()
+}
+
+class Composite {
+    doSomething()
+}
+
+X <|-- A
+X <|-- B
+X <|-- Composite
+X "*" <-- Composite
+
+Note bottom of Composite
+    Composite connait pleins de X
+    il va leur demander de faire doSomething quand on lui demande de faire doSomthing()
+    Compostie est un X et peut donc contenir des X
+end note
+
+@enduml

@@ -1,0 +1,46 @@
+@startuml
+
+class Calculatrice {
+    +applyOperation() : int
+    setOperation(Operation op) : void
+}
+
+Note top of Calculatrice
+    Déléguer le calcul à une opération. Plus dynamique
+    applyOperation(){ return op.getResultat(); }
+end note
+
+
+interface Operation {
+    +getResultat() : int
+}
+
+class Addition {
+    -a : int
+    -b : int
+    +getResultat() : int
+}
+
+class Soustraction {
+    +getResultat() : int
+}
+
+class Multiplication {
+    +getResultat() : int
+}
+
+class Division {
+    +getResultat() : int
+}
+
+Calculatrice *- Operation : op
+
+Operation <|-- Addition
+Operation <|-- Soustraction
+Operation <|-- Multiplication
+Operation <|-- Division
+
+
+
+
+@enduml
