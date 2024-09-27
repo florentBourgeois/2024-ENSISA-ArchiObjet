@@ -1,8 +1,7 @@
 package uha.ensisa.archiobjet.DungeonMapper.visitor;
 
-import DungeonMapper.composite.BossRoom;
-import DungeonMapper.composite.Room;
-import DungeonMapper.composite.StartRoom;
+
+import uha.ensisa.archiobjet.DungeonMapper.composite.*;
 
 public abstract class Visitor {
 

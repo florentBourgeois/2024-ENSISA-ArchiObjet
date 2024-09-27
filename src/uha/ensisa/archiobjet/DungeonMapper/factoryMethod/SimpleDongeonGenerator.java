@@ -1,9 +1,10 @@
 package uha.ensisa.archiobjet.DungeonMapper.factoryMethod;
 
-import DungeonMapper.composite.BossRoom;
-import DungeonMapper.composite.Room;
-import DungeonMapper.composite.StandardRoom;
-import DungeonMapper.composite.StartRoom;
+
+import uha.ensisa.archiobjet.DungeonMapper.composite.BossRoom;
+import uha.ensisa.archiobjet.DungeonMapper.composite.Room;
+import uha.ensisa.archiobjet.DungeonMapper.composite.StandardRoom;
+import uha.ensisa.archiobjet.DungeonMapper.composite.StartRoom;
 
 public class SimpleDongeonGenerator extends DungeonGenerator {
 

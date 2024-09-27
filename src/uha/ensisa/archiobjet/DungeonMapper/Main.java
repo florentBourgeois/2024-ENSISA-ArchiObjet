@@ -1,10 +1,11 @@
 package uha.ensisa.archiobjet.DungeonMapper;
 
-import DungeonMapper.composite.Room;
-import DungeonMapper.factoryMethod.DungeonGenerator;
-import DungeonMapper.factoryMethod.SimpleDongeonGenerator;
-import DungeonMapper.visitor.StraightVisitor;
-import DungeonMapper.visitor.Visitor;
+
+import uha.ensisa.archiobjet.DungeonMapper.composite.Room;
+import uha.ensisa.archiobjet.DungeonMapper.factoryMethod.DungeonGenerator;
+import uha.ensisa.archiobjet.DungeonMapper.factoryMethod.SimpleDongeonGenerator;
+import uha.ensisa.archiobjet.DungeonMapper.visitor.StraightVisitor;
+import uha.ensisa.archiobjet.DungeonMapper.visitor.Visitor;
 
 public class Main {
     public static void main(String[] args) {

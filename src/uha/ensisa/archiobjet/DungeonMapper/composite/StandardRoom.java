@@ -1,6 +1,7 @@
 package uha.ensisa.archiobjet.DungeonMapper.composite;
 
-import DungeonMapper.visitor.Visitor;
+
+import uha.ensisa.archiobjet.DungeonMapper.visitor.Visitor;
 
 public class StandardRoom extends Room{
 

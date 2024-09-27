@@ -13,7 +13,7 @@ public class UtilsHTML {
      */
     public static void writeHTMLToIndex(String html){
         try {
-            BufferedWriter writer = new BufferedWriter(new FileWriter("Ressources/DungeonMapper/index.html"));
+            BufferedWriter writer = new BufferedWriter(new FileWriter("src/uha/ensisa/archiobjet/DungeonMapper/index.html"));
             writer.write(getBegining());
             writer.write(html);
             writer.write(getEnding());

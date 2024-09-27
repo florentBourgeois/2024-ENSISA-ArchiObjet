@@ -1,7 +1,8 @@
 package uha.ensisa.archiobjet.DungeonMapper.composite;
 
-import DungeonMapper.visitor.Visitable;
-import DungeonMapper.visitor.Visitor;
+
+import uha.ensisa.archiobjet.DungeonMapper.visitor.Visitable;
+import uha.ensisa.archiobjet.DungeonMapper.visitor.Visitor;
 
 import java.awt.*;
 

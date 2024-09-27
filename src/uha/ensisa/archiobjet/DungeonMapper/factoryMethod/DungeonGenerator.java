@@ -1,6 +1,7 @@
 package uha.ensisa.archiobjet.DungeonMapper.factoryMethod;
 
-import DungeonMapper.composite.Room;
+
+import uha.ensisa.archiobjet.DungeonMapper.composite.Room;
 
 public abstract class DungeonGenerator {
 
