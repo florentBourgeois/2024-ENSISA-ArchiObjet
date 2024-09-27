@@ -3,9 +3,7 @@ import Binary from "./Binary.js";
 
 export default class Plus extends Binary {
     constructor(opA, opB) {
-        super();
-        this.opA = opA;
-        this.opB = opB;
+        super(opA,opB);
     }
 
 
@@ -14,6 +12,6 @@ export default class Plus extends Binary {
     }
 
     print(){
-        console.log("Plus : {opA: " + this.opA + " opB: "+ this.opB+"}");
+        console.log("Plus : {opA: " + this.getOpA().print() + " opB: "+ this.getOpB().print()+"}");
     }
 }

@@ -12,6 +12,6 @@ export default class Value extends Valuable {
     }
 
     print(){
-        console.log("Value : {value: " + this.value + "}");
+        console.log("Value : {" + this.value + "}");
     }
 }
